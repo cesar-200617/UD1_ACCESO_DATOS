@@ -1,5 +1,6 @@
 package com.example.cajaspico_csar_ud1_practica1
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -27,6 +28,22 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+
+    }
+    private fun recuperarDatos() {
+        val preferencias = getSharedPreferences("agenda_alumnos", Context.MODE_PRIVATE)
+
+        val idUltimo = preferencias.getString("id_alumno", "")
+        val nombreUltimo = preferencias.getString("nombre", "")
+        val apellidosUltimo = preferencias.getString("apellidos", "")
+        val cursoUltimo = preferencias.getString("curso", "")
+        val claseUltima = preferencias.getString("clase", "")
+
+        if(!idUltimo.isNullOrEmpty()){
+            binding.txtMain2.text="Último alumno registrado:\\nID: \$idUltimo\\nNombre: \$nombreUltimo \$apellidosUltimos\\nCurso: \$cursoUltimo - Clase: \$claseUltima."
+        }else{
+            binding.txtMain2.text="No hay datos de alumnos guardados todavía."
+        }
 
     }
 

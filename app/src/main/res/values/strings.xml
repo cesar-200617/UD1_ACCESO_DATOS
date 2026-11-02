@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CajasPico_César_UD1_Practica1</string>
+    <string name="titulo">Agenda de Datos</string>
+    <string name="sin_datos">No hay ningún alumno guardado</string>
+    <string name="gestionar_datos">Guarday y buscar alumnos</string>
+    <string name="acerca_de">Acerca del programador</string>
+    <string name="acerca_titulo">Acerca del programador</string>
+    <string name="acerca_autor">Programador: César Cajas Pico</string>
+    <string name="salir">Salir</string>
 </resources>
