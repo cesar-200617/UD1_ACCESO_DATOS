@@ -3,9 +3,14 @@ plugins {
 }
 
 android {
+
+    buildFeatures{
+        viewBinding=true
+    }
+
     namespace = "com.example.cajaspico_csar_ud1_practica1"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
     }

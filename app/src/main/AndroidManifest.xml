@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CajasPico_César_UD1_Practica1">
         <activity
+            android:name=".AcercaDe"
+            android:exported="false" />
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
