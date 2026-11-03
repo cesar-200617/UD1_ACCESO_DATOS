@@ -3,6 +3,7 @@
     <string name="titulo">Agenda de Datos</string>
     <string name="sin_datos">No hay ningún alumno guardado</string>
     <string name="gestionar_datos">Guarday y buscar alumnos</string>
+    <string name="about">Acerca de</string>
 
     <string name="salir">Salir</string>
     <string name="nombre">Nombre</string>

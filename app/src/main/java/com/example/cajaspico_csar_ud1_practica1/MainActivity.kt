@@ -35,21 +35,20 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    override fun onResume() {
+        super.onResume()
+        recuperarDatos()
+    }
+
     private fun recuperarDatos() {
-        val preferencias = getSharedPreferences("agenda_alumnos", Context.MODE_PRIVATE)
+        val gestorPrefs = AlumnosPrefs(this)
+        val ultimoAlumno = gestorPrefs.obtenerUltimoAlumno()
 
-        val dniUltimo = preferencias.getString("dniUltimo", "")
-        val nombreUltimo = preferencias.getString(dniUltimo + "_nombre", "")
-        val apellidosUltimo = preferencias.getString(dniUltimo + "_apellidos", "")
-        val cursoUltimo = preferencias.getString(dniUltimo + "_curso", "")
-        val claseUltima = preferencias.getString(dniUltimo + "_clase", "")
-
-        if(!dniUltimo.isNullOrEmpty()){
-            binding.txtMain2.text="Último alumno registrado:\nID: $dniUltimo \nNombre: $nombreUltimo $apellidosUltimo \nCurso: $cursoUltimo - Clase: $claseUltima."
-        }else{
-            binding.txtMain2.text="No hay datos de alumnos guardados todavía."
+        if (ultimoAlumno != null) {
+            binding.txtMain2.text = "Último alumno registrado:\nDNI: ${ultimoAlumno.dni}\nNombre: ${ultimoAlumno.nombre} ${ultimoAlumno.apellidos}\nCurso: ${ultimoAlumno.curso} - Clase: ${ultimoAlumno.clase}"
+        } else {
+            binding.txtMain2.text = "No hay datos de alumnos guardados todavía."
         }
-
     }
 
 

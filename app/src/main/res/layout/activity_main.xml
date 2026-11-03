@@ -37,5 +37,5 @@
         android:id="@+id/btnMain2"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
-        android:text="@string/acerca_de" />
+        android:text="@string/about" />
 </LinearLayout>
