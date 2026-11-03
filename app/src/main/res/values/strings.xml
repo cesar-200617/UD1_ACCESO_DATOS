@@ -3,8 +3,21 @@
     <string name="titulo">Agenda de Datos</string>
     <string name="sin_datos">No hay ningún alumno guardado</string>
     <string name="gestionar_datos">Guarday y buscar alumnos</string>
-    <string name="acerca_de">Acerca del programador</string>
-    <string name="acerca_titulo">Acerca del programador</string>
-    <string name="acerca_autor">Programador: César Cajas Pico</string>
+
     <string name="salir">Salir</string>
+    <string name="nombre">Nombre</string>
+    <string name="dni">DNI</string>
+    <string name="apellidos">Apellidos</string>
+    <string name ="curso">Curso</string>
+    <string name ="clase">Clase</string>
+    <string name ="TituloAct2">Datos del Alumno</string>
+    <string name="btn1">Guardar alumno</string>
+    <string name ="btn2">Buscar alumno</string>
+
+    <string name="about_titulo">Acerca del Desarrollador</string>
+    <string name="about_nombre">César Mauricio Cajas Pico</string>
+    <string name="about_estudios">Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM)</string>
+    <string name="about_descripcion">Desarrollador junior apasionado por la creación de aplicaciones móviles y software eficiente. Especializado en entornos Android con Kotlin y Java, enfocado en buenas prácticas de arquitectura y diseño de interfaces.</string>
+    <string name="about_contacto">Contacto: cesarcajas17@gmail.com</string>
+
 </resources>
