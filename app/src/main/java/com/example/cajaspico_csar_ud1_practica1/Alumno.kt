@@ -22,7 +22,7 @@ class AlumnosPrefs(context: Context) {
         editor.putString(alumno.dni + "_clase", alumno.clase)
         editor.putString("dniUltimo", alumno.dni)
 
-        val listaDnis = prefs.getStringSet("array_dnis", mutableSetOf())?.toMutableSet() ?: mutableSetOf()
+        val listaDnis = prefs.getStringSet("array_dnis", null)?.toMutableSet()?:mutableSetOf()
         listaDnis.add(alumno.dni)
         editor.putStringSet("array_dnis", listaDnis)
 
@@ -32,10 +32,10 @@ class AlumnosPrefs(context: Context) {
     fun buscarAlumno(dni: String): Alumno? {
         val listaDnis = prefs.getStringSet("array_dnis", emptySet())
         if (listaDnis != null && listaDnis.contains(dni)) {
-            val nombre = prefs.getString(dni + "_nombre", "") ?: ""
-            val apellidos = prefs.getString(dni + "_apellidos", "") ?: ""
-            val curso = prefs.getString(dni + "_curso", "") ?: ""
-            val clase = prefs.getString(dni + "_clase", "") ?: ""
+            val nombre = prefs.getString(dni + "_nombre", null)?:""
+            val apellidos = prefs.getString(dni + "_apellidos", null)?:""
+            val curso = prefs.getString(dni + "_curso", null)?:""
+            val clase = prefs.getString(dni + "_clase", null)?:""
             return Alumno(dni, nombre, apellidos, curso, clase)
         }
         return null

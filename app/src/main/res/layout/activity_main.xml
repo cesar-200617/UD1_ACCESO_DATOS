@@ -12,30 +12,66 @@
     <ImageView
         android:id="@+id/imgMain1"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="400dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/istockphoto_1394658823_612x612" />
 
     <TextView
         android:id="@+id/txtMain1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:text="@string/titulo"/>
 
-    <TextView
-        android:id="@+id/txtMain2"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center" />
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:contentPadding="16dp">
 
-    <Button
-        android:id="@+id/btnMain1"
-        android:layout_width="234dp"
-        android:layout_height="wrap_content"
-        android:text="@string/gestionar_datos"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMain2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
+
+
+        <Button
+                android:id="@+id/btnMain1"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gestionar_datos"
+                android:contentDescription="@string/app_name"/>
+
+            <Button
+                android:id="@+id/btnMain2"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:text="@string/about" />
     <Button
-        android:id="@+id/btnMain2"
-        android:layout_width="234dp"
+        android:id="@+id/btnMain3"
+        android:layout_width="232dp"
         android:layout_height="wrap_content"
-        android:text="@string/about" />
+        android:text="@string/salir" />
+
+
+
 </LinearLayout>

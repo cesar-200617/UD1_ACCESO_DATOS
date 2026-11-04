@@ -47,13 +47,27 @@ class Activity2 : AppCompatActivity() {
                     binding.et3.setText(alumnoEncontrado.apellidos)
                     binding.et4.setText(alumnoEncontrado.curso)
                     binding.et5.setText(alumnoEncontrado.clase)
-                    Toast.makeText(this, "¡Encontrado!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Encontrado!", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(this, "No existe ese DNI", Toast.LENGTH_SHORT).show()
+                    binding.et2.text.clear()
+                    binding.et3.text.clear()
+                    binding.et4.text.clear()
+                    binding.et5.text.clear()
                 }
             } else {
                 Toast.makeText(this, "Introduce un DNI", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        binding.btn4.setOnClickListener {
+            binding.et1.text.clear()
+            binding.et2.text.clear()
+            binding.et3.text.clear()
+            binding.et4.text.clear()
+            binding.et5.text.clear()
+
+            Toast.makeText(this, "Campos limpios", Toast.LENGTH_SHORT).show()
         }
     }
 }

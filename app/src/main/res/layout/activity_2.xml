@@ -11,6 +11,9 @@
 
     <TextView
         android:id="@+id/txt1"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:layout_marginBottom="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -20,67 +23,71 @@
         android:id="@+id/et1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="@string/dni" />
+        android:hint="@string/dni" />
 
     <EditText
         android:id="@+id/et2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="@string/nombre" />
+        android:hint="@string/nombre" />
 
     <EditText
         android:id="@+id/et3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="@string/apellidos" />
+        android:hint="@string/apellidos" />
 
     <EditText
         android:id="@+id/et4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="@string/curso" />
+        android:hint="@string/curso" />
 
     <EditText
         android:id="@+id/et5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:gravity="center_horizontal"
         android:inputType="text"
-        android:text="@string/clase" />
+        android:hint="@string/clase"
+        android:layout_marginBottom="50dp"/>
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/btn1" />
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/btn2" />
 
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/salir" />
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/btn1" />
 
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/btn2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/salir" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/clear" />
 
 </LinearLayout>

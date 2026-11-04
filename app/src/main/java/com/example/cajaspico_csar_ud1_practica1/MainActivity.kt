@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, AcercaDe::class.java)
             startActivity(intent)
         }
+        binding.btnMain3.setOnClickListener {
+            finish()
+        }
 
 
 

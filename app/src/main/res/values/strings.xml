@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">CajasPico_César_UD1_Practica1</string>
-    <string name="titulo">Agenda de Datos</string>
+
+    <string name="app_name">Agenda de Alumnos</string>
+    <string name="titulo">Agenda de Alumnos</string>
     <string name="sin_datos">No hay ningún alumno guardado</string>
     <string name="gestionar_datos">Guarday y buscar alumnos</string>
     <string name="about">Acerca de</string>
@@ -14,6 +15,7 @@
     <string name ="TituloAct2">Datos del Alumno</string>
     <string name="btn1">Guardar alumno</string>
     <string name ="btn2">Buscar alumno</string>
+    <string name ="clear">Limpiar campos</string>
 
     <string name="about_titulo">Acerca del Desarrollador</string>
     <string name="about_nombre">César Mauricio Cajas Pico</string>
