@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnMain3.setOnClickListener {
-            finish()
+            finishAffinity()
         }
 
 

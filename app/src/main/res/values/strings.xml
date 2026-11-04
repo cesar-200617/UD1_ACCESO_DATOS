@@ -3,7 +3,7 @@
     <string name="app_name">Agenda de Alumnos</string>
     <string name="titulo">Agenda de Alumnos</string>
     <string name="sin_datos">No hay ningún alumno guardado</string>
-    <string name="gestionar_datos">Guarday y buscar alumnos</string>
+    <string name="gestionar_datos">Guardar y buscar alumnos</string>
     <string name="about">Acerca de</string>
 
     <string name="salir">Salir</string>
@@ -16,11 +16,13 @@
     <string name="btn1">Guardar alumno</string>
     <string name ="btn2">Buscar alumno</string>
     <string name ="clear">Limpiar campos</string>
+    <string name="buscarDNI">Introduce DNI</string>
 
     <string name="about_titulo">Acerca del Desarrollador</string>
     <string name="about_nombre">César Mauricio Cajas Pico</string>
     <string name="about_estudios">Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM)</string>
     <string name="about_descripcion">Desarrollador junior apasionado por la creación de aplicaciones móviles y software eficiente. Especializado en entornos Android con Kotlin y Java, enfocado en buenas prácticas de arquitectura y diseño de interfaces.</string>
     <string name="about_contacto">Contacto: cesarcajas17@gmail.com</string>
+
 
 </resources>

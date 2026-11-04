@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.cajaspico_csar_ud1_practica1.databinding.ActivityAcercaDeBinding
+import android.content.Intent
 
 class AcercaDe : AppCompatActivity() {
 
@@ -18,7 +19,13 @@ class AcercaDe : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnVolver.setOnClickListener {
-            finish()
+            val intent=Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.button.setOnClickListener {
+            val intent= Intent(this, Activity2::class.java)
+            startActivity(intent)
         }
 
 
